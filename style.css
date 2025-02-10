@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      overflow: hidden;
+  }
+  
+  .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease;
+  }
+  
+  @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Header */
+  header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      animation: slideIn 1s ease;
+  }
+  
+  header p {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.8);
+      animation: slideIn 1.2s ease;
+  }
+  
+  @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      height: 10px;
+      margin: 20px 0;
+      overflow: hidden;
+  }
+  
+  #progress {
+      height: 100%;
+      width: 0%;
+      background: #00ff88;
+      transition: width 0.5s ease;
+  }
+  
+  /* Timer */
+  #timer {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+  }
+  
+  /* Question Container */
+  #question {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      animation: fadeIn 0.5s ease;
+  }
+  
+  #options .option {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  #options .option:hover {
+      background: rgba(255, 255, 255, 0.4);
+      transform: translateY(-5px);
+  }
+  
+  #options .option.selected {
+      background: #00ff88;
+      color: black;
+  }
+  
+  /* Submit Button */
+  #submit-btn {
+      padding: 15px 30px;
+      background: #00ff88;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  #submit-btn:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+  }
+  
+  #submit-btn:hover:not(:disabled) {
+      background: #00cc66;
+      transform: translateY(-5px);
+  }
+  
+  /* Result Section */
+  #result {
+      margin-top: 20px;
+      animation: fadeIn 0.5s ease;
+  }
+  
+  #result h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+  }
+  
+  #result p {
+      font-size: 1.2rem;
+      margin: 5px 0;
+  }
+  
+  #retry-btn {
+      padding: 15px 30px;
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  #retry-btn:hover {
+      background: #ff4c4c;
+      transform: translateY(-5px);
+  }

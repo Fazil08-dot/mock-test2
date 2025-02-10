@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAMCET Mock Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>EAMCET Mock Test</h1>
+            <p>Test your knowledge and prepare for the exam!</p>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <!-- Timer -->
+        <div id="timer">
+            <span id="time-left">60</span>s
+        </div>
+
+        <!-- Question Container -->
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="options">
+                <button class="option"></button>
+                <button class="option"></button>
+                <button class="option"></button>
+                <button class="option"></button>
+            </div>
+            <button id="submit-btn" disabled>Submit</button>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result" style="display: none;">
+            <h2>Your Score: <span id="score"></span>/50</h2>
+            <p>Correct Answers: <span id="correct"></span></p>
+            <p>Incorrect Answers: <span id="incorrect"></span></p>
+            <button id="retry-btn">Retry Test</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
